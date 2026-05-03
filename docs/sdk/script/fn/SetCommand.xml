@@ -54,7 +54,7 @@
         </param>
       </params>
     </syntax>
-    <desc>Gives a command to an object. The object will try to complete the command using the internal artificial intelligence (including pathfinding).</desc>
+    <desc>Gives a command to an object. The object will try to complete the command using the engine command handling (including pathfinding).</desc>
     <remark>
       The following commands are defined: 
       <table>

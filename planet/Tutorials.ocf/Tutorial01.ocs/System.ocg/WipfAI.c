@@ -1,4 +1,4 @@
-// Artificial intelligence for the wipf and also the elevator.
+// Wipf + elevator behaviour script.
 
 #appendto Wipf
 

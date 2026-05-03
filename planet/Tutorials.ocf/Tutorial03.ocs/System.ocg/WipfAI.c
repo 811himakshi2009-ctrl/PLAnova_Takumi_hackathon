@@ -1,4 +1,4 @@
-// Artificial intelligence for the wipf.
+// Wipf behaviour script.
 
 #appendto Wipf
 

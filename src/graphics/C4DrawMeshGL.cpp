@@ -44,10 +44,7 @@ namespace
 	};
 
 	////////////////////////////////////////////
-	// Shader code generation
-	// This translates the fixed function instructions in a material script
-	// to an equivalent fragment shader. The generated code can certainly
-	// be optimized more.
+	// Shader codegen: fixed-function material ops -> GLSL strings (could use more tuning).
 	////////////////////////////////////////////
 	StdStrBuf Texture2DToCode(int index, bool hasTextureAnimation)
 	{

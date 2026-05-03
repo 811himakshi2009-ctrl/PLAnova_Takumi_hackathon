@@ -250,8 +250,8 @@ class C4AulCompiler::CodegenAstVisitor : public ::aul::DefaultRecursiveVisitor
 	bool SafeVisit(const T &node)
 	{
 		// Swallows exceptions during evaluation of node. Use if you want to
-		// keep doing syntax checks for subsequent children. (Generated code
-		// will cause a runtime error if executed.)
+		// keep doing syntax checks for subsequent children. (Bad emitted bytecode
+		// would fail at runtime if executed.)
 		try
 		{
 			node->accept(this);

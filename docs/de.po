@@ -5134,7 +5134,7 @@ msgid "Number of retries if the command fails, until the command fails completel
 msgstr "Anzahl der Wiederholungen (wenn das Kommando fehlschlägt), bis das Kommando abgebrochen wird."
 
 #: sdk/script/fn/SetCommand.xml:57(desc)
-msgid "Gives a command to an object. The object will try to complete the command using the internal artificial intelligence (including pathfinding)."
+msgid "Gives a command to an object. The object will try to complete the command using the engine command handling (including pathfinding)."
 msgstr "Gibt dem aufrufenden Objekt ein Kommando, welches dieses selbstständig (ggf. durch automatische Wegfindung) auszuführen versucht."
 
 #: sdk/script/fn/SetCommand.xml:62(col)

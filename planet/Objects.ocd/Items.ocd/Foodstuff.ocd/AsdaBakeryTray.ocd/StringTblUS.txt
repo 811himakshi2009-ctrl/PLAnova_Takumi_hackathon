@@ -1,0 +1,2 @@
+Name=ASDA Bakery Pick
+Description=A tray of sweet baked things from the in-store bakery. Press [Use] while walking to eat. (Fan content — not affiliated with any real retailer.)

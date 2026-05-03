@@ -1,0 +1,2 @@
+Name=ASDA Meal Deal
+Description=A supermarket sandwich that somehow restores plenty of energy. Press [Use] while walking to eat. (Fan content — not affiliated with any real retailer.)

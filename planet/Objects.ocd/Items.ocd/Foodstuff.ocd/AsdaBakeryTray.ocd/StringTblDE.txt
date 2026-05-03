@@ -1,0 +1,2 @@
+Name=ASDA Backshop-Auswahl
+Description=Eine Auswahl süßer Backwaren. Zum Essen [Benutzen] drücken, während du läufst. (Fan-Inhalt.)

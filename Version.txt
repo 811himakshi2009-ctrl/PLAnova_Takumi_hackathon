@@ -1,0 +1,30 @@
+# PLAnova, http://www.planova.org
+#
+# Copyright (c) 2009-2018, The PLAnova Team and contributors
+#
+# Distributed under the terms of the ISC license; see accompanying file
+# "COPYING" for details.
+#
+# "Clonk" is a registered trademark of Matthes Bender, used with permission.
+# See accompanying file "TRADEMARK" for details.
+#
+# To redistribute this file separately, substitute the full license texts
+# for the above references.
+
+############################################################################
+# Project version information
+############################################################################
+
+SET(C4PROJECT           "PLAnova Project")
+SET(C4PROJECT_DOMAIN    "planova")
+SET(C4PROJECT_TLD       "org")
+SET(C4PROJECT_URL       "http://${C4PROJECT_DOMAIN}.${C4PROJECT_TLD}")
+SET(C4ENGINENAME        "PLAnova")
+SET(C4ENGINENICK        "planova")
+
+SET(C4XVER1             9)
+SET(C4XVER2             0)
+
+# Set this variable to any string for pre-release versions, like "alpha" or
+# "rc1". Don't supply a value (FALSE) for release versions.
+SET(C4VERSIONEXTRA      "alpha")

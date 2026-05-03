@@ -1,0 +1,12 @@
+[DefCore]
+id=GUI_SimpleProgressBar
+Version=8,0
+Category=C4D_StaticBack
+Width=16
+Height=16
+Offset=-8,-8
+Vertices=1
+VertexX=0
+VertexY=0
+VertexFriction=20
+HideInCreator=true

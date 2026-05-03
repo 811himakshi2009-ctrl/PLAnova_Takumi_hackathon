@@ -1,0 +1,13 @@
+[DefCore]
+id=MinersStatue_Head
+Version=8,0
+Category=C4D_Vehicle
+Width=17
+Height=21
+Offset=-8,-10
+Vertices=7
+VertexX=-6,-4,0,6,8,2,-2
+VertexY=0,-7,-8,-8,0,8,6
+VertexFriction=50,50,50,50,50,50,50
+Mass=150
+Rotate=1

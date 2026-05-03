@@ -1,0 +1,2 @@
+Name=Keule
+Description=Großer Bruder des Baseballschlägers. Zielen und Schlagen mit [Benutzen].

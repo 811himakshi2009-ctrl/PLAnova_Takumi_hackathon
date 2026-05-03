@@ -1,0 +1,7 @@
+Name=Steintür
+DoorUp=Tür hoch
+DoorDown=Tür runter
+DoorUpDesc=Hebt eine Tür an.
+Door=Tür
+DoorTargetHelp=Zu bewegende Tür.
+DoorDownDesc=Senkt eine Tür ab.

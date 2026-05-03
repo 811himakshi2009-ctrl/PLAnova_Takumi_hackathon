@@ -1,0 +1,12 @@
+[DefCore]
+id=FloatingMessage
+Version=8,0
+Category=C4D_None
+Width=8
+Height=8
+Offset=-4,-4
+HideInCreator=true
+
+[Physical]
+Float=400
+

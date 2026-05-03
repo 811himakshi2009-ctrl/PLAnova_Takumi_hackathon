@@ -1,0 +1,2 @@
+Name=Boompack
+Description=Einweg-Transportmittel für besonders wagemütige Clonks. Ziele und zünde die Rakete um in diese Richtung zu fliegen. Springe rechtzeitig ab bevor sie explodiert!

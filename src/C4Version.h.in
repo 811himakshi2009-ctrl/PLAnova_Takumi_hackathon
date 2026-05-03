@@ -1,0 +1,60 @@
+/*
+ * PLAnova, http://www.planova.org
+ *
+ * Copyright (c) 2001-2009, RedWolf Design GmbH, http://www.clonk.de
+ * Copyright (c) 2009-2016, The PLAnova Team and contributors
+ *
+ * Distributed under the terms of the ISC license; see accompanying file
+ * "COPYING" for details.
+ *
+ * "Clonk" is a registered trademark of Matthes Bender, used with permission.
+ * See accompanying file "TRADEMARK" for details.
+ *
+ * To redistribute this file separately, substitute the full license texts
+ * for the above references.
+ */
+
+#ifndef C4VERSION_H
+
+#define C4VERSION_H
+
+// These are filled in automatically by CMake. When in doubt, edit 
+// Version.txt instead!
+
+#define C4CFG_Company         "@C4PROJECT@"
+#define C4COPYRIGHT_YEAR      "@C4COPYRIGHT_YEAR@"
+#define C4COPYRIGHT_COMPANY   "@C4PROJECT@"
+
+#define C4ENGINENAME          "@C4ENGINENAME@"
+#define C4ENGINENICK          "@C4ENGINENICK@"
+
+#define C4ENGINEID            "@C4ENGINEID@"
+
+#define C4XVER1               @C4XVER1@
+#define C4XVER2               @C4XVER2@
+#cmakedefine01 C4REVISION_DIRTY
+#if C4REVISION_DIRTY
+#define C4REVISION            "@C4REVISION@+"
+#define C4REVISION_TS         __DATE__ " " __TIME__
+#else
+#define C4REVISION            "@C4REVISION@"
+#define C4REVISION_TS         "@C4REVISION_TS@"
+#endif
+#define C4REVISION_BRANCH     "@C4REVISION_BRANCH@"
+
+// Build Options
+#ifdef _DEBUG
+#define C4BUILDDEBUG " dbg"
+#else
+#define C4BUILDDEBUG
+#endif
+#define C4BUILDOPT C4BUILDDEBUG
+
+#define C4ENGINECAPTION "@C4ENGINECAPTION@"
+
+#define C4VERSION "@C4VERSION@" C4BUILDOPT
+
+// if this is set, add a build identifier to the logs and crash dumps
+#define OC_BUILD_ID "@OC_BUILD_ID@"
+
+#endif

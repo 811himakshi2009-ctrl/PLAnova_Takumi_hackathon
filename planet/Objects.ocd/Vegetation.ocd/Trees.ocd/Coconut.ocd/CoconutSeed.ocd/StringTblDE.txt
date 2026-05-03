@@ -1,0 +1,2 @@
+Name=Kokosnuss
+Description=Ein große Saat aus Kokosussbaum. Schmeckt gut!

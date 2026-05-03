@@ -1,0 +1,2 @@
+Name=Sichel
+Description=Die Sichel wird zum Ernten hartnäckiger Pflanzen (wie Weizen und Baumwolle) benötigt. Halte [Benutzen] gedrückt, um Pflanzen zu ernten.

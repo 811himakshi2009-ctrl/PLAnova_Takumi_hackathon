@@ -1,0 +1,54 @@
+Requirements
+============
+You should be able to build PLAnova with any C++ compiler that supports
+ISO C++14. That said, on Windows, we recommend using Microsoft Visual C++
+2015 or higher; the Express edition will be sufficient. On Linux, you will
+be fine with GNU g++ 4.9 or later. Apple users should use a clang-based
+XCode version.
+
+To generate project files for your chosen build system, you will also have to
+install CMake from http://www.cmake.org/.
+
+Additionally, PLAnova depends on a number of third-party libraries:
+  - zlib (http://zlib.net/)
+  - curl (https://curl.haxx.se/)
+  - libpng (http://www.libpng.org/pub/png/libpng.html)
+  - libjpeg-turbo (http://sourceforge.net/projects/libjpeg-turbo/files/)
+  - FreeType (http://www.freetype.org/)
+  - Epoxy (https://github.com/anholt/libepoxy)
+  - FreeALUT (https://github.com/vancegroup/freealut)
+  - libogg and libvorbis (https://www.xiph.org/downloads/)
+  - Qt >= 5.7 (https://www.qt.io/download-open-source/)
+
+OS X Specific
+=============
+PLAnova supports OS X versions 10.8 "Mountain Lion" and later.
+If you are using brew (https://github.com/mxcl/homebrew) or MacPorts
+(http://www.macports.org/), the packages you'll have to install are:
+    libjpeg, libpng, freetype, epoxy, libogg, libvorbis
+
+Linux Specific
+==============
+For building PLAnova on Linux, you need the following libraries in addition
+to the ones listed above:
+  - SDL 2.0 (https://www.libsdl.org/download-2.0.php)
+  - libGL (http://www.mesa3d.org/)
+  - OpenAL Soft >= 1.13 (https://github.com/kcat/openal-soft)
+  - miniupnpc (http://miniupnp.free.fr/)
+  - libxrandr
+Most distributions should provide these dependencies via their packaging
+system. At least gcc-4.9 is required.
+
+Windows Specific
+================
+In addition to the libraries above, you will need one more if you want to
+target Windows:
+  - OpenAL Soft (http://kcat.strangesoft.net/openal.html)
+To create an installer, you will also need the Nullsoft Install System
+(http://nsis.sourceforge.net/). To create the installer, build the "setup" target.
+
+Packaging Notes for PLAnova 9.0
+=================================
+In PLAnova 9.0, the following dependencies changed:
+  - Epoxy replaces GLEW. This should resolve issues with Wayland.
+  - curl is a new dependency.

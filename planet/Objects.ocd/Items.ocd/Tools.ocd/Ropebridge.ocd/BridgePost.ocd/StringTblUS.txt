@@ -1,0 +1,3 @@
+Name=Bridge post
+Description=Holds the rope bridge.
+MsgRetractBridge=Retract the rope bridge.

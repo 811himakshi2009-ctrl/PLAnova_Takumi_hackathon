@@ -1,0 +1,3 @@
+Name=Pulverfass
+Description=Munition für die Kanone.
+RemainingPowder=Verbleibendes Pulver

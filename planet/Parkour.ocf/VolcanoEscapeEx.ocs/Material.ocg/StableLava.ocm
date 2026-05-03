@@ -1,0 +1,13 @@
+[Material]
+Name=StableLava
+Density=25
+Instable=0
+MaxAirSpeed=50
+MaxSlide=10000
+WindDrift=40
+Incendiary=1
+Placement=10
+TextureOverlay=lava_red
+PXSGfxSize=6
+PXSGfx=Lava
+PXSGfxRt=0,0,32,32,-16,-16

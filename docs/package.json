@@ -1,0 +1,22 @@
+{
+  "name": "planova-docs",
+  "version": "1.0.0",
+  "description": "Developer documentation for PLAnova",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planova/planova.git"
+  },
+  "author": "The PLAnova Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/planova/planova/issues"
+  },
+  "homepage": "https://github.com/planova/planova#readme",
+  "dependencies": {
+    "lunr": "^2.1.6",
+    "xml2js": "^0.4.19"
+  }
+}

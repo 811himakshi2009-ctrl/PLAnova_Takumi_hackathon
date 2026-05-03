@@ -1,0 +1,16 @@
+[DefCore]
+id=SteamEngine
+Version=8,0
+Category=C4D_Structure
+Width=66
+Height=48
+Offset=-33,-24
+Vertices=8
+VertexX=-18,18, 0,-24,24,-10,10, 0
+VertexY= -5,-5,-7, 24,24, 24,24,24
+VertexFriction=50,50,100,100,100,100,100,100
+Mass=4000
+Collection=-33,7,12,12
+Exclusive=1
+Construction=1
+IncompleteActivity=1

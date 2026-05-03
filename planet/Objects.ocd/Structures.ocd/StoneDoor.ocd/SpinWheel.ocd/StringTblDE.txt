@@ -1,0 +1,6 @@
+Name=Winde
+Description=Öffne oder schließe die verbundene Burgtür mit [Hoch] oder [Runter].
+UpAction=Aktion 'Hoch'
+DownAction=Aktion 'Runter'
+ControlUp=Winde hoch
+ControlDown=Winde runter

@@ -1,0 +1,2 @@
+Name=Schwert
+Description=Nahkampfwaffe. Drücke [Benutzen], um zuzuschlagen.

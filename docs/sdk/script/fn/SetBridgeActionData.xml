@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE funcs
+  SYSTEM '../../../clonk.dtd'>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<funcs>
+  <func>
+    <title>SetBridgeActionData</title>
+    <category>Objects</category>
+    <subcat>Activity</subcat>
+    <version>1.0 OC<extversion>9.0 OC</extversion></version>
+    <syntax>
+      <rtype>bool</rtype>
+      <params>
+        <param>
+          <type>int</type>
+          <name>bridge_length</name>
+          <desc>Length of the bridge.</desc>
+        </param>
+        <param>
+          <type>bool</type>
+          <name>move_clonk</name>
+          <desc>Whether the clonk is supposed to move with the bridge.</desc>
+        </param>
+        <param>
+          <type>bool</type>
+          <name>build_wall</name>
+          <desc><code>true</code> if the clonk is meant to build a ceiling above his head instead of a bridge underneath his feet.</desc>
+        </param>
+        <param>
+          <type>int</type>
+          <name>bridge_material</name>
+          <desc>Material number of the material to be used for the bridge.</desc>
+        </param>
+      </params>
+    </syntax>
+    <desc>Sets additional parameters for a currently executed BRIDGE procedure of the calling object.</desc>
+    <remark>Removed in 9.0 OC. You can draw bridges on an object via <emlink href="script/Effects.html">effects</emlink> and <funclink>DrawMaterialQuad</funclink>.</remark>
+    <related>
+      <funclink>SetAction</funclink>
+      <funclink>SetActionData</funclink>
+      <funclink>GetAction</funclink>
+      <funclink>GetActionTarget</funclink>
+      <funclink>SetPhase</funclink>
+      <funclink>SetDir</funclink>
+      <funclink>SetComDir</funclink>
+    </related>
+  </func>
+  <author>Clonkonaut</author><date>2008-05</date>
+  <author>Marky</author><date>2019-04</date>
+</funcs>

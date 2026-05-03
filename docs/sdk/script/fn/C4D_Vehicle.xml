@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE funcs
+  SYSTEM '../../../clonk.dtd'>
+<?xml-stylesheet type="text/xsl" href="../../../clonk.xsl"?>
+<funcs>
+  <const>
+    <title>C4D_Vehicle</title>
+    <category>Objects</category>
+    <subcat>Category</subcat>
+    <version>1.0 OC</version>
+    <syntax><rtype>int </rtype></syntax>
+    <desc>Unused Object category.</desc>
+    <related>
+      <funclink>GetCategory</funclink>
+      <funclink>SetCategory</funclink>
+    </related>
+  </const>
+  <author>Günther</author><date>2011</date>
+</funcs>

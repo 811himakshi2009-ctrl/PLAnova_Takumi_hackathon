@@ -1,0 +1,189 @@
+/*
+ * PLAnova, http://www.planova.org
+ *
+ * Copyright (c) 2001-2009, RedWolf Design GmbH, http://www.clonk.de/
+ * Copyright (c) 2009-2016, The PLAnova Team and contributors
+ *
+ * Distributed under the terms of the ISC license; see accompanying file
+ * "COPYING" for details.
+ *
+ * "Clonk" is a registered trademark of Matthes Bender, used with permission.
+ * See accompanying file "TRADEMARK" for details.
+ *
+ * To redistribute this file separately, substitute the full license texts
+ * for the above references.
+ */
+
+#ifndef INC_C4Aul
+#define INC_C4Aul
+
+#include "object/C4Id.h"
+#include "script/C4StringTable.h"
+#include "script/C4Value.h"
+#include "script/C4ValueMap.h"
+
+// consts
+#define C4AUL_MAX_Identifier  100 // max length of function identifiers
+
+// warning flags
+enum class C4AulWarningId
+{
+#define DIAG(id, text, enabled) id,
+#include "C4AulWarnings.h"
+#undef DIAG
+	WarningCount
+};
+
+extern const char *C4AulWarningIDs[];
+extern const char *C4AulWarningMessages[];
+
+// generic C4Aul error class
+class C4AulError : public std::exception
+{
+protected:
+	StdCopyStrBuf sMessage;
+
+public:
+	~C4AulError() override = default; // destructor
+	const char *what() const noexcept override;
+};
+
+// parse error
+class C4AulParseError : public C4AulError
+{
+	C4AulParseError() = default;
+public:
+	C4AulParseError(C4ScriptHost *pScript, const char *pMsg); // constructor
+	C4AulParseError(class C4AulParse * state, const char *pMsg); // constructor
+	C4AulParseError(C4AulScriptFunc * Fn, const char *SPos, const char *pMsg);
+};
+
+// execution error
+class C4AulExecError : public C4AulError
+{
+public:
+	C4AulExecError(const char *szError);
+};
+
+class C4AulFuncMap
+{
+public:
+	C4AulFuncMap();
+	~C4AulFuncMap();
+	C4AulFunc * GetFirstFunc(const char * Name);
+	C4AulFunc * GetNextSNFunc(const C4AulFunc * After);
+private:
+	enum { HashSize = 1025 };
+	C4AulFunc * Funcs[HashSize];
+	int FuncCnt{0};
+	static unsigned int Hash(const char * Name);
+protected:
+	void Add(C4AulFunc * func);
+	void Remove(C4AulFunc * func);
+	friend class C4AulFunc;
+	friend class C4ScriptHost;
+};
+
+// user text file to which scripts can write using FileWrite().
+// actually just writes to an internal buffer
+class C4AulUserFile
+{	
+	StdCopyStrBuf sContents;
+	int32_t handle;
+
+public:
+	C4AulUserFile(int32_t handle) : handle(handle) {}
+	void Write(const char *data, size_t data_length) { sContents.Append(data, data_length); }
+
+	const char *GetFileContents() { return sContents.getData(); }
+	StdStrBuf GrabFileContents() { StdStrBuf r; r.Take(sContents); return r; }
+	size_t GetFileLength() { return sContents.getLength(); }
+	int32_t GetHandle() const { return handle; }
+};
+
+class C4AulErrorHandler
+{
+public:
+	virtual ~C4AulErrorHandler();
+	virtual void OnError(const char *msg) = 0;
+	virtual void OnWarning(const char *msg) = 0;
+};
+
+// holds all C4AulScripts
+class C4AulScriptEngine: public C4PropListStaticMember
+{
+protected:
+	C4AulFuncMap FuncLookUp;
+	C4AulFunc * GetFirstFunc(const char * Name)
+	{ return FuncLookUp.GetFirstFunc(Name); }
+	C4AulFunc * GetNextSNFunc(const C4AulFunc * After)
+	{ return FuncLookUp.GetNextSNFunc(After); }
+	C4ScriptHost *Child0, *ChildL; // tree structure
+
+	// all open user files
+	// user files aren't saved - they are just open temporary e.g. during game saving
+	std::list<C4AulUserFile> UserFiles;
+	std::vector<C4Value> OwnedPropLists;
+
+	C4AulErrorHandler *ErrorHandler;
+
+public:
+	int warnCnt{0}, errCnt{0}; // number of warnings/errors
+	int lineCnt{0}; // line count parsed
+
+	C4ValueMapNames GlobalNamedNames;
+	C4ValueMapData GlobalNamed;
+
+	// global constants (such as "static const C4D_Structure = 2;")
+	// cannot share var lists, because it's so closely tied to the data lists
+	// constants are used by the Parser only, anyway, so it's not
+	// necessary to pollute the global var list here
+	C4ValueMapNames GlobalConstNames;
+	C4ValueMapData GlobalConsts;
+
+	C4Effect * pGlobalEffects = nullptr;
+
+	C4AulScriptEngine(); // constructor
+	~C4AulScriptEngine() override; // destructor
+	void Clear(); // clear data
+	void Link(C4DefList *rDefs); // link and parse all scripts
+	void ReLink(C4DefList *rDefs); // unlink, link and parse all scripts
+	C4PropListStatic * GetPropList() { return this; }
+	bool ReloadScript(const char *szScript, const char *szLanguage); // search script and reload, if found
+
+	// For the list of functions in the PropertyDlg
+	std::list<const char*> GetFunctionNames(C4PropList *);
+
+	void RegisterGlobalConstant(const char *szName, const C4Value &rValue); // creates a new constants or overwrites an old one
+	bool GetGlobalConstant(const char *szName, C4Value *pTargetValue); // check if a constant exists; assign value to pTargetValue if not nullptr
+
+	void Denumerate(C4ValueNumbers *) override;
+	void UnLink(); // called when a script is being reloaded (clears string table)
+
+	// Compile scenario script data (without strings and constants)
+	void CompileFunc(StdCompiler *pComp, bool fScenarioSection, C4ValueNumbers * numbers);
+
+	// Handle user files
+	int32_t CreateUserFile(); // create new file and return handle
+	void CloseUserFile(int32_t handle); // close user file given by handle
+	C4AulUserFile *GetUserFile(int32_t handle); // get user file given by handle
+
+	void RegisterErrorHandler(C4AulErrorHandler *handler);
+	void UnregisterErrorHandler(C4AulErrorHandler *handler);
+	C4AulErrorHandler *GetErrorHandler() const
+	{
+		return ErrorHandler;
+	}
+
+	friend class C4AulFunc;
+	friend class C4AulProfiler;
+	friend class C4ScriptHost;
+	friend class C4AulParse;
+	friend class C4AulCompiler;
+	friend class C4AulDebug;
+};
+
+extern C4AulScriptEngine ScriptEngine;
+void InitCoreFunctionMap(C4AulScriptEngine *pEngine);
+
+#endif

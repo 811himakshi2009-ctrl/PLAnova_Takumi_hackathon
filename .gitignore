@@ -100,7 +100,7 @@ tests/gmock_autogen/
 tests/gtest_autogen/
 tests/tests
 tests/tests_autogen/
-thirdparty/blake2/blake2_autogen/
+vendor/blake2/blake2_autogen/
 
 # Temporary files created by Microsoft Visual Studio
 *.ncb
@@ -167,3 +167,5 @@ ui_C4ConsoleQt*.h
 resource.qrc.depends
 *.exp
 qt.conf
+
+licenses/

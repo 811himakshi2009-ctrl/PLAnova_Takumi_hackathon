@@ -17,7 +17,7 @@
 if(WIN32)
 	CHECK_INCLUDE_FILE_CXX(natupnp.h HAVE_NATIVE_NATUPNP)
 	if(NOT HAVE_NATIVE_NATUPNP)
-		SET(UPNP_INCLUDE_DIR "thirdparty/natupnp")
+		SET(UPNP_INCLUDE_DIR "vendor/natupnp")
 	else()
 		SET(UPNP_INCLUDE_DIR)
 	endif()

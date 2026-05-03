@@ -248,8 +248,8 @@ if(HAVE_EXECINFO_H)
 endif()
 
 if(NOT HAVE_GETOPT_H)
-	include_directories(SYSTEM thirdparty/getopt)
-	add_subdirectory(thirdparty/getopt)
+	include_directories(SYSTEM vendor/getopt)
+	add_subdirectory(vendor/getopt)
 	set_property(TARGET getopt PROPERTY FOLDER "Third-party libraries")
 	set(GETOPT_LIBRARIES getopt)
 endif()
@@ -258,9 +258,9 @@ if (NOT C4GROUP_TOOL_ONLY)
 	# TinyXML
 	find_package(TinyXML)
 	if(NOT TinyXML_FOUND)
-		add_subdirectory(thirdparty/tinyxml)
+		add_subdirectory(vendor/tinyxml)
 		set_property(TARGET tinyxml PROPERTY FOLDER "Third-party libraries")
-		set(TinyXML_INCLUDE_DIRS thirdparty/tinyxml)
+		set(TinyXML_INCLUDE_DIRS vendor/tinyxml)
 		set(TinyXML_LIBRARIES tinyxml)
 		set(TinyXML_FOUND TRUE)
 	endif()
@@ -277,7 +277,7 @@ if(NOT C4GROUP_TOOL_ONLY)
 	if(UNIX AND NOT APPLE)
 		FINDLIB(X11_LIBRARIES X11)
 
-		set(Backward_DIR thirdparty/backward-cpp)
+		set(Backward_DIR vendor/backward-cpp)
 		find_package(Backward)
 		if(Backward_FOUND)
 			set(HAVE_BACKWARD 1)
@@ -762,7 +762,7 @@ set(OC_CLONK_SOURCES
 	src/player/C4ScenarioParameters.h
 	src/script/C4AulDebug.cpp
 	src/script/C4AulDebug.h
-	thirdparty/timsort/sort.h
+	vendor/timsort/sort.h
 	src/lib/C4LogBuf.cpp
 	src/lib/C4LogBuf.h
 	src/lib/C4Log.cpp
@@ -1011,9 +1011,9 @@ include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/src
 )
 
-# Mark thirdparty as system headers so we don't get warnings from them
+# Mark vendored deps as system headers so we don't get warnings from them
 include_directories(SYSTEM
-	${CMAKE_CURRENT_SOURCE_DIR}/thirdparty
+	${CMAKE_CURRENT_SOURCE_DIR}/vendor
 )
 
 ############################################################################
@@ -1072,9 +1072,9 @@ ${OC_LICENSES}
 	# the sources in the solution explorer. We could use an INTERFACE library
 	# but there is no point to that because we don't need it for non-IDE
 	# generators and support on IDE-targetting generators is nonexistant.
-	thirdparty/pcg/pcg_extras.hpp
-	thirdparty/pcg/pcg_random.hpp
-	thirdparty/pcg/pcg_uint128.hpp
+	vendor/pcg/pcg_extras.hpp
+	vendor/pcg/pcg_random.hpp
+	vendor/pcg/pcg_uint128.hpp
 )
 
 target_link_libraries(libmisc ${ZLIB_LIBRARIES})
@@ -1133,7 +1133,7 @@ src/script/C4ValueArray.h
 src/script/C4ValueMap.cpp
 src/script/C4ValueMap.h
 )
-add_subdirectory(thirdparty/blake2)
+add_subdirectory(vendor/blake2)
 set_property(TARGET blake2 PROPERTY FOLDER "Third-party libraries")
 target_link_libraries(libc4script blake2 libmisc)
 

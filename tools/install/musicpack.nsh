@@ -36,7 +36,7 @@ Function nsMusicPage
 	${NSD_CreateCheckbox} 0 24u 100% 10u "&Download and install music (155MB)"
 	Pop $MusicCheckbox
 	
-	${NSD_CreateLabel} 0 48u 100% 24u "License: Music by David Oerther ù Copyright 2015. All rights reserved, note that the soundtrack does not use the creative common or similar licenses."
+	${NSD_CreateLabel} 0 48u 100% 24u "License: Music by David Oerther ÔøΩ Copyright 2015. All rights reserved, note that the soundtrack does not use the creative common or similar licenses."
 	
 	${NSD_CreateLabel} 0 72u 100% 36u "The game PLAnova ( http://www.planova.org/ ) may use and distribute the soundtrack, as long as credit is given. This explicitly includes packaged distributions of the game. In-game videos of PLAnova and game modifications and extensions based on the PLAnova file-types (.ocd, .ocs and .ocf) don't require credits."
 

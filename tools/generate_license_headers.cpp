@@ -79,8 +79,8 @@ std::string lendings(std::string content) {
 void mein(int argc, char ** argv) {
 	if (argc > 0)
 		self = argv[0];
-	if (argc < 4 || argc % 2 != 0)
-		bail("Error: expected at least three arguments: one header output path and several pairs of (text file path, display name)");
+	if (argc < 2 || argc % 2 != 0)
+		bail("Error: expected output path and optional pairs of (text file path, display name)");
 	std::vector<std::pair<char *, char *>> inputs;
 	for (int i = 2; i < argc; i += 2)
 		inputs.push_back(std::make_pair(argv[i], argv[i+1]));

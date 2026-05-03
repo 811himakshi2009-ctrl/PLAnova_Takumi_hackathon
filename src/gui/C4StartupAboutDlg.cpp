@@ -51,7 +51,7 @@ static struct DeveloperList : public PersonList
 		return out.str();
 	}
 }
-// the following lists are all sorted by all-time commit count: git shortlog -s | sort -rn
+// Credit lists: rough commit-count order, nothing official.
 engineAndTools =
 {
 	{"Sven Eberhardt", "Sven2"},
@@ -154,8 +154,7 @@ static struct ContributorList : public PersonList
 	}
 } contributors;
 
-// Sorted by commit count this release, e.g.: git shortlog -s v7.0.. | sort -rn
-// Stuff from the milestone project sorted in-between as those commits usually end up squashed.
+// This-release contributors — same rough sort as above.
 const std::vector<ContributorList::Entry> ContributorList::contributorsThisRelease = {
 	{"George Tokmaji", "Fulgen"},      // 75 commits
 	{"Martin Adam", "Win"},            // lava core animal

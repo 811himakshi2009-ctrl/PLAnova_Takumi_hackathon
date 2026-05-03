@@ -5,33 +5,7 @@
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
  */
 
-/* Finds the way through the Clonk landscape */
-
-/* Notes
-
-   09-30-99
-   I have had the concept for this code for more than two years now.
-   Finally, it is written.
-
-   10-26-99
-   C4PathFinderRay::Crawl use IsCrawlAttach instead of GetCrawlAttach (which
-   might not correctly indicate attach loss). Otherwise 1 pixel clefts can lead
-   to backward crawl looping. Surprised, I haven't noticed this before.
-   Also do not check attach loss on first crawl for that be might diagonal.
-   C4PF_Ray_Crawl try new ray: don't worry about checking backwards jump if
-   path to target is all free.
-   C4PathFinderRay::FindCrawlAttachDiagonal check according to desired
-   direction or else might lead off to no attach.
-
-   11-24-99
-   TransferZones
-
-   12-11-99
-   SetCompletePath don't set move-to waypoint if setting use-zone waypoint (is
-   done by C4Command::Transfer on demand and would only cause no-good-entry-point
-   move-to's on crawl-zone-entries).
-
-*/
+/* Pathfinder: crawl along solid ground and shoot rays toward the goal. */
 
 #include "C4Include.h"
 #include "landscape/C4PathFinder.h"

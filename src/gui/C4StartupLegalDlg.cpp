@@ -13,10 +13,6 @@
 #include "game/C4Application.h"
 #include "C4Licenses.h"
 
-
-// Sorted by commit count this release, e.g.: git shortlog -s v7.0.. | sort -rn
-// Stuff from the milestone project sorted in-between as those commits usually end up squashed.
-
 // ------------------------------------------------
 // --- C4StartupLegalDlg
 

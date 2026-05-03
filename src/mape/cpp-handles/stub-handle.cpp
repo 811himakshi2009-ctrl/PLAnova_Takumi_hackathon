@@ -23,8 +23,7 @@
 #include "landscape/C4Sky.h"
 #include "graphics/C4Draw.h"
 
-/* This file implements stubs for the parts of the engine that are not used
- * by mape. */
+/* Link-time stubs — mape only needs a thin slice of the engine. */
 
 C4Landscape Landscape;
 C4PXSSystem PXS;

@@ -11,11 +11,7 @@
 #include <cstdlib>
 #include <cstdint>
 
-// Generating this file in a way that neither bad old clang, bad old xcode, or bad old msvc will choke on it is actually not that easy.
-// MSVC limits the string length to 16K, but just doing ("x" "y") or ("x" + "y") doesn't constitute two strings
-// Clang on the other hand really doesn't like it if you have too many std::string() + std::string + … in one expression
-// Old clang also seems to have a broken regex engine, with \.hpp|\.h and \.h|\.hpp not matching the same set of strings
-// MSVCs regex engine, on the other hand, doesn't like long strings/complicated regexes: "regex_error(error_stack): There was insufficient memory to determine whether the regular expression could match the specified character sequence."
+// License blobs get chopped into ~16k string literals; MSVC/clang/Xcode all used to break on bigger chunks or ugly concat.
 static const size_t maxblock = 16000;
 
 // iswalnum will backstab

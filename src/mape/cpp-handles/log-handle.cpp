@@ -7,8 +7,7 @@
 #include "C4Include.h"
 #include "lib/C4Log.h"
 
-// This implements the Log engine function such that the first log message
-// is stored and can be retrieved later by the C API.
+// Stash the first Log() line for the mape C API to read back.
 std::string first_log;
 unsigned int n_logs = 0;
 

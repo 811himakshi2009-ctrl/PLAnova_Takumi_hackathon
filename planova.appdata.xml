@@ -29,8 +29,8 @@
     </screenshot>
   </screenshots>
   <url type="homepage">https://www.planova.org</url>
-  <url type="bugtracker">https://github.com/planova/planova/issues</url>
-  <url type="vcs-browser">https://github.com/planova/planova</url>
+  <url type="bugtracker">https://github.com/811himakshi2009-ctrl/PLAnova_Takumi_hackathon/issues</url>
+  <url type="vcs-browser">https://github.com/811himakshi2009-ctrl/PLAnova_Takumi_hackathon</url>
   <launchable type="desktop-id">org.planova.PLAnova.desktop</launchable>
   <developer id="org.planova">
     <name>PLAnova contributors</name>

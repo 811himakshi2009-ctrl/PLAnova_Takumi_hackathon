@@ -106,10 +106,6 @@ void C4StartupMainDlg::DrawElement(C4TargetFacet &cgo)
 	// inherited
 	typedef C4GUI::FullscreenDialog Base;
 	Base::DrawElement(cgo);
-	// draw logo
-	C4FacetID * fctStartupLogo = &C4Startup::Get()->Graphics.fctStartupLogo;
-	float fLogoZoom = 1.0f;
-	fctStartupLogo->DrawX(cgo.Surface, rcBounds.Wdt *1/21, rcBounds.Hgt/28, int32_t(fLogoZoom*fctStartupLogo->Wdt), int32_t(fLogoZoom*fctStartupLogo->Hgt));
 	// draw version info
 	StdStrBuf sVer;
 	sVer.Format(LoadResStr("IDS_DLG_VERSION"), C4VERSION);

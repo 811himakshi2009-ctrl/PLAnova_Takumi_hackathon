@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/planova/planova.git"
+    "url": "git+https://github.com/811himakshi2009-ctrl/PLAnova_Takumi_hackathon.git"
   },
   "author": "The PLAnova Team",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/planova/planova/issues"
+    "url": "https://github.com/811himakshi2009-ctrl/PLAnova_Takumi_hackathon/issues"
   },
-  "homepage": "https://github.com/planova/planova#readme",
+  "homepage": "https://github.com/811himakshi2009-ctrl/PLAnova_Takumi_hackathon#readme",
   "dependencies": {
     "lunr": "^2.1.6",
     "xml2js": "^0.4.19"

@@ -19391,7 +19391,7 @@ msgstr "Sollte den Namen des Autors im Format \"Vorname Nachname (Nick)\" enthal
 
 #: sdk/folder/foldermap.xml:9(text)
 msgid "Scenario folders can also contain graphical folder maps for the selection of scenarios. These will be displayed only in the fullscreen menu, not in the editor. See the Western pack for samples."
-msgstr "Rundenordner können Auswahlkarten für die enthaltenen Szenarien anbieten. Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwicklerfrontend (Editor) angezeigt. Für ein Beispiel siehe das Westernpack von RedWolf Design."
+msgstr "Rundenordner können Auswahlkarten für die enthaltenen Szenarien anbieten. Diese Karten werden nur in der Szenarienauswahl im Spiel und nicht im Entwicklerfrontend (Editor) angezeigt. Für ein Beispiel siehe ähnliche Szenariopacks in der Community."
 
 #: sdk/folder/foldermap.xml:12(caption)
 msgid "Section [FolderMap]"

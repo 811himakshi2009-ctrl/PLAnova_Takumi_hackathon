@@ -2,14 +2,8 @@
 #
 # Copyright (c) 2013-2016, The PLAnova Team and contributors
 #
-# Distributed under the terms of the ISC license; see accompanying file
-# "COPYING" for details.
 #
-# "Clonk" is a registered trademark of Matthes Bender, used with permission.
-# See accompanying file "TRADEMARK" for details.
 #
-# To redistribute this file separately, substitute the full license texts
-# for the above references.
 
 include(CheckCXXSourceCompiles)
 macro(REQUIRE_CXX_SOURCE_COMPILES _code _var)

@@ -1,17 +1,9 @@
 /*
  * PLAnova, http://www.planova.org
  *
- * Copyright (c) 2001-2009, RedWolf Design GmbH, http://www.clonk.de/
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
  *
- * Distributed under the terms of the ISC license; see accompanying file
- * "COPYING" for details.
- *
- * "Clonk" is a registered trademark of Matthes Bender, used with permission.
- * See accompanying file "TRADEMARK" for details.
- *
- * To redistribute this file separately, substitute the full license texts
- * for the above references.
+ * Licensed under the ISC license.
  */
 // About/credits screen
 
@@ -138,7 +130,7 @@ static struct ContributorList : public PersonList
 		text << ", and more";
 		f(text);
 
-		text << "Finally, a big thanks to Matthes Bender and all those who contributed to previous Clonk titles for the passion they put into the game and for agreeing to make Clonk open source.";
+		text << "Thank you to everyone who has contributed to PLAnova.";
 		f(text);
 
 		return text.str();
@@ -254,7 +246,7 @@ C4StartupAboutDlg::C4StartupAboutDlg() : C4StartupDlg(LoadResStr("IDS_DLG_ABOUT"
 	btn->SetToolTip(LoadResStr("IDS_DESC_CHECKONLINEFORNEWVERSIONS"));
 #endif
 
-	AddElement(new C4GUI::Label("'Clonk' is a registered trademark of Matthes Bender.",
+	AddElement(new C4GUI::Label(C4VERSION,
 		caButtons.GetFromBottom(rUseFont.GetLineHeight())));
 
 	C4GUI::ComponentAligner caDevelopers(caMain.GetFromTop(caMain.GetHeight() * 1/2), 0,0, false);

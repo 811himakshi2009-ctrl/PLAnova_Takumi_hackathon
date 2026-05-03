@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // Roughly adapted from the original C4AppDelegate.m; haxxed to death by teh Gurkendoktor.

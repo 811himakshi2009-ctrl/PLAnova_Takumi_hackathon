@@ -5,9 +5,6 @@
  * Copyright (c) 2006, Peter Wortmann
  * Copyright (c) 2007, Günther Brammer
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #ifndef C4AULEXEC_H

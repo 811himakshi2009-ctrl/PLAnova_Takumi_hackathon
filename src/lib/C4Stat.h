@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // statistics
 #ifndef INC_C4Stat

@@ -3,9 +3,6 @@
  *
  * Copyright (c) 2006, Armin Burgmeier
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #ifndef C4CONSOLEGUI_INC

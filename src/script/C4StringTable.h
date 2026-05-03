@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2009-2019, The PLAnova Team and contributors
- *
- *
- *
  */
 /* string table: holds all strings used by script engine */
 

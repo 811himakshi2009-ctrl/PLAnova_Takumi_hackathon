@@ -2,9 +2,6 @@
 * PLAnova, http://www.planova.org
 *
 * Copyright (c) 2016, The PLAnova Team and contributors
-*
-*
-*
 */
 
 // Proxies the logging functions into a class so we can test that something

@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* A wrapper class to OS dependent event and window interfaces, SDL version */

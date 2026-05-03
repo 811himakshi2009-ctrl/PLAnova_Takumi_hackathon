@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2017, The PLAnova Team and contributors
- *
- *
- *
  */
 #ifndef C4HTTP_H
 #define C4HTTP_H

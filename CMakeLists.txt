@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2009-2018, The PLAnova Team and contributors
 #
-# Licensed under the ISC license.
+# SPDX-License-Identifier: ISC
 
 cmake_minimum_required (VERSION 3.5.1)
 

@@ -2,9 +2,6 @@
 * PLAnova, http://www.planova.org
 *
 * Copyright (c) 2014-2016, The PLAnova Team and contributors
-*
-*
-*
 */
 
 /* a flexisble ingame menu system that can be composed out of multiple windows */

@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 /* Game parameters - game data that is valid before the game is started */
 

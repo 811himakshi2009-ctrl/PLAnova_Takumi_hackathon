@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2014-2017, The PLAnova Team and contributors
- *
- *
- *
  */
 #include "C4Include.h"
 #include "player/C4Achievement.h"

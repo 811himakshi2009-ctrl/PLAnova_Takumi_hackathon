@@ -3,9 +3,6 @@
  *
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2015-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Handles the sound bank and plays effects using DSoundX */

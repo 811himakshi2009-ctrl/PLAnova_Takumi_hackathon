@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2009-2017, The PLAnova Team and contributors
- *
- *
- *
  */
  // Screen for mod handling
 

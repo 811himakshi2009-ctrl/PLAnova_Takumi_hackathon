@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Console forward from C4ConsoleGUI to C4ConsoleGUI::State */

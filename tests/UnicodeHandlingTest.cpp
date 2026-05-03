@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2011, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Verify correct behavior of UTF-8 handling code. */

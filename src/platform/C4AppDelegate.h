@@ -3,9 +3,6 @@
  *
  * Copyright (c) 2006-2007, Julian Raschke
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 /*   SDLMain.m - main entry point for our Cocoa-ized SDL app
        Initial Version: Darrell Walisser <dwaliss1@purdue.edu>

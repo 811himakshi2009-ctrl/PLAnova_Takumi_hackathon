@@ -3,9 +3,6 @@
  *
  * Copyright (c) 2001, 2007, Sven Eberhardt
  * Copyright (c) 2011-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #include "C4Include.h"

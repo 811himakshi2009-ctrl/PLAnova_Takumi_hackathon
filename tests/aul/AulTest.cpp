@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2015-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // Testing C4Aul behaviour.

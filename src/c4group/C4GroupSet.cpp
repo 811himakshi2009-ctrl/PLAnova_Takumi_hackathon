@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // a set of group files
 // manages system file overwriting by scearios or folders

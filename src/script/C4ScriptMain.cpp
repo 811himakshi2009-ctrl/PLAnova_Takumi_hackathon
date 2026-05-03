@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2012-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // Do not include C4Include.h - this file tests whether

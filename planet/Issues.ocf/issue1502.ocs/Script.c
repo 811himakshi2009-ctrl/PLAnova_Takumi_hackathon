@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2015, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Issue #1502: Translate() does not fall back when a string has no translation in the current object */

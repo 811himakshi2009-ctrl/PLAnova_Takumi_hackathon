@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2020, The PLAnova Team and contributors
- *
- *
- *
  */
 // About/credits screen
 

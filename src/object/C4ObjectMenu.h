@@ -3,9 +3,6 @@
  *
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // Menus attached to objects; script created or internal
 // These menus are shown to players if the target object is the current cursor

@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 #include "C4Include.h"
 #include "network/C4Network2Discover.h"

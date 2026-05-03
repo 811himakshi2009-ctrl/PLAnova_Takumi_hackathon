@@ -3,7 +3,7 @@
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
  *
- * Licensed under the ISC license.
+ * SPDX-License-Identifier: ISC
  */
 // About/credits screen
 
@@ -130,7 +130,7 @@ static struct ContributorList : public PersonList
 		text << ", and more";
 		f(text);
 
-		text << "Thank you to everyone who has contributed to PLAnova.";
+		text << "Thanks to everyone who contributed.";
 		f(text);
 
 		return text.str();

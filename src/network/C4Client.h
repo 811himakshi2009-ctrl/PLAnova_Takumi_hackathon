@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 #ifndef C4CLIENT_H
 #define C4CLIENT_H

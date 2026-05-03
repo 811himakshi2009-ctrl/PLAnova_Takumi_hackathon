@@ -3,9 +3,6 @@
  *
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Handles scripted map creation */

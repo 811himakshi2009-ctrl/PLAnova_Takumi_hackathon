@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013, The PLAnova Team and contributors
- *
- *
- *
  */
 
 static __test_last_result;

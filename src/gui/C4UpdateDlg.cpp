@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // dialogs for update, and the actual update application code
 // is only compiled WITH_AUTOMATIC_UPDATE

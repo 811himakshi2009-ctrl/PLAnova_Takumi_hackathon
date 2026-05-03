@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2001-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #ifndef C4AULSCRIPTFUNC_H_

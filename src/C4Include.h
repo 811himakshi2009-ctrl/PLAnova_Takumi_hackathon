@@ -4,7 +4,7 @@
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
  *
- * Licensed under the ISC license.
+ * SPDX-License-Identifier: ISC
  */
 
 /* This header is included first from every source file. It serves three purposes:

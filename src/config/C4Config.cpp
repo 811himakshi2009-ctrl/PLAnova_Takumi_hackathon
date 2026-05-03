@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Game configuration as stored in registry */

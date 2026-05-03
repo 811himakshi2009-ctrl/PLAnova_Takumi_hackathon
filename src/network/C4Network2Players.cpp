@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // NET2 network player management
 // see header for some additional information

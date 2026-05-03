@@ -5,9 +5,6 @@
  * Copyright (c) 2005-2006, Günther Brammer
  * Copyright (c) 2006, Armin Burgmeier
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #ifndef INC_STDAPP

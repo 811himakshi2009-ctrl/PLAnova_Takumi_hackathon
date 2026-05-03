@@ -3,9 +3,6 @@
  *
  * Copyright (c) 2005, Günther Brammer
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // Implement a simplified version of Log so that we don't get undefined

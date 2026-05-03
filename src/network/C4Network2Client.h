@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 #ifndef INC_C4Network2Client
 #define INC_C4Network2Client

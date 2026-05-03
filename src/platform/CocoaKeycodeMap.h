@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #define K(k,s,a) {k+CocoaKeycodeOffset,s,a}

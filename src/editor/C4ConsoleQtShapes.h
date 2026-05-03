@@ -2,9 +2,6 @@
 * PLAnova, http://www.planova.org
 *
 * Copyright (c) 2013, The PLAnova Team and contributors
-*
-*
-*
 */
 
 /* Editable shapes in the viewports (like e.g. AI guard range rectangles) */

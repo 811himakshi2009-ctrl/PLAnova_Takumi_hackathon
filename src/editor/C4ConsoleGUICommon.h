@@ -3,9 +3,6 @@
  *
  * Copyright (c) 2005, Günther Brammer
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // To be directly included by platform-specific implementations

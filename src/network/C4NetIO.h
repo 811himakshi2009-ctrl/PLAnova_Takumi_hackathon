@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2009-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 /* network i/o, featuring tcp, udp and multicast */
 

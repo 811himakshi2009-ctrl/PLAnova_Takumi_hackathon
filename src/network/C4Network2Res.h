@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 // network resource: data needed for the game (scenario, plr files, definitions...)
 

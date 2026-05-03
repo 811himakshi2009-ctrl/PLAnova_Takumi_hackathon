@@ -1,11 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-PLAnova, http://www.planova.org
-
-Copyright (c) 2015, The PLAnova Team and contributors
-
-
-
+  PLAnova, http://www.planova.org
+  Copyright (c) 2015, The PLAnova Team and contributors
+  SPDX-License-Identifier: ISC
 -->
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
   <Type Name="StdStrBuf">

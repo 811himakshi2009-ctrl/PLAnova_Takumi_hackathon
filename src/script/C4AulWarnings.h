@@ -2,9 +2,6 @@
 * PLAnova, http://www.planova.org
 *
 * Copyright (c) 2017-2018, The PLAnova Team and contributors
-*
-*
-*
 */
 
 // C4Aul diagnostics definitions

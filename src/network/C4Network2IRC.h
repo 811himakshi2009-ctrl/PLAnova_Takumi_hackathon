@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 #ifndef C4NETWORK2IRC_H
 #define C4NETWORK2IRC_H

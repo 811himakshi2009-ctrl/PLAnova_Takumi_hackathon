@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 // C4Aul abstract syntax tree nodes

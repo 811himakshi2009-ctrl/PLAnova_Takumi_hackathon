@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2012-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Functions for displaying a settings dialogue to users when the graphics system failed */

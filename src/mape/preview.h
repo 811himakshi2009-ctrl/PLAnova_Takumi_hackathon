@@ -2,9 +2,6 @@
  * mape - C4 Landscape.txt editor
  *
  * Copyright (c) 2005-2009, Armin Burgmeier
- *
- *
- *
  */
 
 #ifndef INC_MAPE_PREVIEW_H

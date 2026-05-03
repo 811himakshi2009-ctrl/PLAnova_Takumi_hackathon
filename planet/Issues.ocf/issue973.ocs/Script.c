@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2013, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* Issue #973: {Find, Sort}_* with no origin should use the FindObject call's

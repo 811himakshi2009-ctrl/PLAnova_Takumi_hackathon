@@ -2,9 +2,6 @@
  * mape - C4 Landscape.txt editor
  *
  * Copyright (c) 2005-2009, Armin Burgmeier
- *
- *
- *
  */
 
 #include "C4Include.h"

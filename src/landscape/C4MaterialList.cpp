@@ -3,9 +3,6 @@
  *
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2013-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* A primitive list to store one amount value per mapped material */

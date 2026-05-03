@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2012-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 /* Dummy implementation of a UPnP port mapper; does nothing */
 

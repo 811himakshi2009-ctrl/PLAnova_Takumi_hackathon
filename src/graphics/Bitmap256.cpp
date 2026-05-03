@@ -3,9 +3,6 @@
  *
  * Copyright (c) 1998-2000, Matthes Bender
  * Copyright (c) 2011-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 /* A structure for handling 256-color bitmap files */

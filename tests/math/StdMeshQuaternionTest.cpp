@@ -2,9 +2,6 @@
 * PLAnova, http://www.planova.org
 *
 * Copyright (c) 2015, The PLAnova Team and contributors
-*
-*
-*
 */
 
 // Tests StdMeshQuaternion

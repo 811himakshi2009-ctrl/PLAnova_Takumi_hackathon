@@ -2,7 +2,7 @@
 #
 # Copyright (c) 2013-2015, The PLAnova Team and contributors
 #
-# Licensed under the ISC license.
+# SPDX-License-Identifier: ISC
 
 # used by c4script and by the unit tests
 set(C4SCRIPT_SOURCES

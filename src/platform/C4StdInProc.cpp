@@ -4,9 +4,6 @@
  * Copyright (c) 2005, Peter Wortmann
  * Copyright (c) 2005-2006, Günther Brammer
  * Copyright (c) 2010-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 
 #include "C4Include.h"

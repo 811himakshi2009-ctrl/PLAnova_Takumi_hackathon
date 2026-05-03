@@ -2,9 +2,6 @@
  * PLAnova, http://www.planova.org
  *
  * Copyright (c) 2011-2016, The PLAnova Team and contributors
- *
- *
- *
  */
 /* synchronization helper classes */
 
